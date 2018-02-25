@@ -1,0 +1,290 @@
+
+.test{
+	margin-left: 25%;
+	position: absolute;
+	top: 55%;
+	transform: translate(-50%,-50%);
+	width: 650px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: transparent;
+	font-size: 170%;
+	color: white;
+	font-family: arial;
+	font-weight: bold;
+}
+.index_body{
+	margin: 0;
+	padding: 0;
+	background: url(images/bk.jpg) no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	
+}
+.index_div1{
+
+	margin-left: 70%;
+	position: absolute;
+	top: 55%;
+	
+	transform: translate(-50%,-50%);
+	width: 350px;
+	height: 450px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.5);
+	/*background: transparent;*/
+
+}
+
+.re_option{
+	color: rgb(0, 34, 128);
+	text-decoration: none;
+}
+
+.re_option:hover{
+	color: red;
+}
+
+.user_pic{
+	border-radius: 50%;
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	top: calc(-100px/2);
+	left: calc(50% - 50px);
+}
+h2{
+	margin: 0;
+	padding: 0 0 20px;
+	color:rgb(6, 3, 32);
+	text-align: center;
+}
+
+.index_div1 p{
+	color: rgb(3, 35, 39);
+	font-weight: bold;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.index_div1 input{
+	width: 100%;
+	margin-bottom: 8px;
+}
+
+.index_div1 input[type= 'text'],
+.index_div1 input[type = 'password']{
+	border: 1px solid red;
+	height: 30px; 
+	font-size: 16px;
+	margin-top: 8px;
+	border-radius: 5px;
+	outline: none;
+}
+
+::placeholder{
+	color: rgb(161, 145, 145);
+}
+
+.index_div1 input[type = 'submit']{
+	height: 30px; 
+	color: rgb(234, 239, 240);
+	font-size: 16px;
+	font-weight: bold;
+	background: rgb(6, 3, 32);
+	border: none;
+	border-radius: 20px;
+	margin-top: 14px;
+}
+
+.index_div1 input[type = 'submit']:hover{
+	background: black;
+	color: red;
+	cursor: pointer;
+}
+
+.add_div1{
+
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 500px;
+	height: 700px;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.5);
+	/*background: transparent;*/
+
+}
+
+.add_div1 label{
+	color: rgb(3, 35, 39);
+	font-weight: bold;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.add_div1 input{
+	width: 70%;
+	margin-bottom: 8px;
+}
+
+.add_div1 input[type= 'text'],
+.add_div1 input[type = 'date']{
+	height: 30px; 
+	font-size: 16px;
+	margin-top: 8px;
+	background: transparent;
+	border: none;
+	border-bottom: 2px solid rgb(6, 3, 32);
+	color: white;
+	outline: none;
+	margin-left: 20%;
+}
+
+.add_div1 textarea{
+	margin-left: 20%;
+	width: 70%;
+	background: transparent;
+	border: 1px solid rgb(6, 3, 32);
+	color: white;
+}
+
+::placeholder{
+	color: rgb(194, 14, 14);
+}
+
+.add_div1 input[type = 'submit']{
+	height: 30px; 
+	color: rgb(234, 239, 240);
+	font-size: 16px;
+	font-weight: bold;
+	background: rgb(6, 3, 32);
+	border: none;
+	border-radius: 20px;
+	margin-top: 25px;
+	margin-left: 20%;
+}
+
+.add_div1 input[type = 'submit']:hover{
+	background: black;
+	color: red;
+	cursor: pointer;
+}
+.view_contact{
+	position: absolute;
+	top: 55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 80%;
+	padding: 80px 40px;
+	box-sizing: border-box;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+ table{
+ 	text-align: center;
+ 	background-color: black;
+ 	color: white;
+
+ }
+table,td,th{
+	border: 2px solid red;
+	border-collapse: collapse;
+	padding: 8px;
+	text-align: center;
+	min-width: 100px;
+	width: 100%;
+}
+.add_contact_button{
+	width: 150px; 
+	height: 50px; 
+	background-color:black; 
+	color:#ffffff; 
+	border:none; 
+	float: right;
+	border-radius: 20px;
+	text-align: center;
+	font-size: 15px;
+	font-weight: bold;
+	transition: 1s;
+	outline: none;
+}
+
+.add_contact_button:hover{
+	background-color:black;
+	color: red;
+	cursor: pointer;
+}
+.logout_button{
+	width: 150px; 
+	height: 50px; 
+	background-color:black; 
+	color:#ffffff; 
+	border:none; 
+	float: right;
+	border-radius: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	transition: 1s;
+	outline: none;
+}
+.logout_button:hover{
+	background-color:black;
+	color: red;
+	cursor: pointer;
+}
+.search_box{
+	width: 300px;
+	height: 40px;
+	float: right;
+	font-size: 20px;
+	border-radius: 13px;
+	font-weight: bold;
+	border: none;
+	outline: none;
+}
+.search_contact_button{
+	width: 100px; 
+	height: 40px; 
+	background-color:black; 
+	color:#ffffff; 
+	border:none; 
+	float: right;
+	border-radius: 15px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.search_contact_button:hover{
+	background-color:black;
+	color: red;
+	cursor: pointer;
+	font-weight: bold;
+}
+.e_d{
+	background: black;
+	color: white;
+	border:1px solid red;
+	border-radius: 20px;
+	cursor: pointer;
+	outline: none;
+}
+.btn-success{
+	color: white;
+	float: left;
+	 width: 150px; 
+	height: 50px; 
+	background-color:black;  
+	border:none; 
+	border-radius: 20px;
+	font-size: 15px;font-weight: bold;
+	cursor: pointer;
+	transition: 1s;
+}
+.btn-success:hover{
+	color: red;
+
+}
