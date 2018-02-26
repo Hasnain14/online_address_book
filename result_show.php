@@ -83,7 +83,7 @@
 							<td><?php echo $data['Website'];?></td>
 							<td><?php echo $data['BirthDay'];?></td>
 							<td>
-							<a  href="edit_contact.php ? id=<?php echo $data['ID']; ?>"><input class="e_d" type="button" value="Edit"></a>
+							<a  href="edit_contact.php  ? id=<?php echo $data['ID']; ?>"><input class="e_d" type="button" value="Edit"></a>
 								<a  href="javascript:delete_contact_confirm('delete_contact.php ? id=<?php echo $data['ID']; ?>') "><input class="e_d" type="button" value="Delete"></a>
 							</td>
 						 </tr>

@@ -3,10 +3,14 @@
 	require_once"db_connect.php";
 
 	global $ID_t;
+	$my_id = "";
+
 
 	if(isset($_GET['id'])){
 
 	$my_id = $_GET['id'];
+
+	echo $my_id;
 
 	$sql_show = "SELECT * from contact WHERE ID = '$my_id'";
 
@@ -36,14 +40,14 @@
 		$address = $_POST['address'];
 		$website = $_POST['website'];
 		$birth_day = $_POST['birth_day'];
-		//$user_id = $_POST['user_id'];
+		$user_id = $_POST['id'];
 
 
 		if(!empty($_POST)){
 
-			echo $my_id;
+			echo $my_id . "aa";
 
-			$sql_add = "UPDATE  contact SET FullName = '$full_name',NickName = '$nick_name', PhoneNumber = '$phn_number',Address = '$address',Website = '$website',BirthDay = '$birth_day' WHERE ID = '$my_id'";
+			$sql_add = "UPDATE  contact SET FullName = '$full_name',NickName = '$nick_name', PhoneNumber = '$phn_number',Address = '$address',Website = '$website',BirthDay = '$birth_day' WHERE ID = '$user_id'";
 
 			
 			/*(FullName,NickName,PhoneNumber,Address,Website,BirthDay,user_id) VALUES ('$full_name','$nick_name','$phn_number','$address','$website','$birth_day','$id')";*/
@@ -77,6 +81,7 @@
 		<h2>Update Contact</h2>
 
 		<form action="edit_contact.php" method="POST">
+			<input type="hidden" name="id" value="<?= (isset($ID_t)) ? $ID_t : '';?>">
 			<label>Full Name :</label>
 			<input type="text" name="full_name" placeholder="Enter Full Name" value="<?= (isset($full_name)) ? $full_name : '';?>" required><br>
 
